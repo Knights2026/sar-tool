@@ -1,7 +1,7 @@
 import streamlit as st
 import anthropic
 
-client = anthropic.Anthropic(api_key="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")
+client = anthropic.Anthropic(api_key=st.secrets["ANTHROPIC_API_KEY"])
 
 st.title("SAR Draft Tool")
 st.subheader("AI-Powered Suspicious Activity Report Generator")
